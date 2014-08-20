@@ -1,0 +1,24 @@
+<h1>Cadastrar Deputado</h1>
+
+<%= form_for @deputado do |f| %>
+	<p>
+		<%= f.label :matricula %><br />
+		<%= f.text_field :matricula %>
+	</p>
+	<p>
+		<%= f.label :nome %><br />
+		<%= f.text_field :nome %>
+	</p>
+	<p>
+		<%= f.label :partido %><br />
+		<%= f.text_field :partido %>
+	</p>
+	<p>
+		<%= f.label :uf %><br />
+		<%= f.text_field :uf %>
+	</p>
+	<p>
+
+<%= f.submit %>
+</p>
+<% end %>

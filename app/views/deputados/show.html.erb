@@ -1,0 +1,11 @@
+<h1> Deputados Registrados </h1>
+<div>
+<% @deputados.each do |p| %>
+<h5>
+	Deputado <%= p.nome %>
+	Matrícula <%= p.matricula %>
+	UF <%= p.uf %>
+	Partido <%= p.partido %>
+	//
+</h5>
+<% end %>

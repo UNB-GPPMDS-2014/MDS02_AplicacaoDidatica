@@ -1,4 +1,10 @@
-Desafio2MDS::Application.routes.draw do
+Desafio2MDS::Application.routes.draw do  
+  root :to => 'deputados#welcome'
+  match '/deputados'     , to: 'deputados#show',           via: 'get'
+  match '/deputados/new' => 'deputados#create', :as => :create
+  match '/deputados/show', to: 'deputados#show',           via: 'get'
+  match '/deputados/index', to: 'deputado#index',           via: 'get'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
